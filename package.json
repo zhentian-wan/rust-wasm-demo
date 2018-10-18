@@ -1,0 +1,14 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && npm run compile",
+    "build": "cargo build --target wasm32-unknown-unknown --release",
+    "compile": "wasm-gc target/wasm32-unknown-unknown/release/utils.wasm -o utils.gc.wasm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
